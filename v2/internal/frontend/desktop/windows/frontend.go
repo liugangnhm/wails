@@ -463,6 +463,18 @@ func (f *Frontend) WindowPrint() {
 	f.ExecJS("window.print();")
 }
 
+func (f *Frontend) SetDebuggable(debuggable bool) error {
+	if f.frontendOptions.Windows == nil {
+		f.frontendOptions.Windows = &windows.Options{}
+	}
+	if debuggable {
+		f.frontendOptions.Windows.WebviewDebugPort = 9222
+	} else {
+		f.frontendOptions.Windows.WebviewDebugPort = 0
+	}
+	return fmt.Errorf("remote debugging port has been updated to %d, please restart the application to take effect", f.frontendOptions.Windows.WebviewDebugPort)
+}
+
 func (f *Frontend) setupChromium() {
 	chromium := f.chromium
 
@@ -474,6 +486,10 @@ func (f *Frontend) setupChromium() {
 	if opts := f.frontendOptions.Windows; opts != nil {
 		chromium.DataPath = opts.WebviewUserDataPath
 		chromium.BrowserPath = opts.WebviewBrowserPath
+
+		if opts.WebviewDebugPort > 0 {
+			chromium.AdditionalBrowserArgs = append(chromium.AdditionalBrowserArgs, fmt.Sprintf("--remote-debugging-port=%d", opts.WebviewDebugPort))
+		}
 
 		if opts.WebviewGpuIsDisabled {
 			chromium.AdditionalBrowserArgs = append(chromium.AdditionalBrowserArgs, "--disable-gpu")

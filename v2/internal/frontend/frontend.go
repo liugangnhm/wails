@@ -167,6 +167,7 @@ type Frontend interface {
 	WindowIsFullscreen() bool
 	WindowClose()
 	WindowPrint()
+	SetDebuggable(debuggable bool) error
 
 	// Screen
 	ScreenGetAll() ([]Screen, error)

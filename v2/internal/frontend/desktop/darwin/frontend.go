@@ -377,6 +377,10 @@ func (f *Frontend) WindowPrint() {
 	f.mainWindow.Print()
 }
 
+func (f *Frontend) SetDebuggable(debuggable bool) error {
+	return nil
+}
+
 type EventNotify struct {
 	Name string        `json:"name"`
 	Data []interface{} `json:"data"`

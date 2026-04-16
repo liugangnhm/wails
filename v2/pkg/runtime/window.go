@@ -184,3 +184,10 @@ func WindowPrint(ctx context.Context) {
 	appFrontend := getFrontend(ctx)
 	appFrontend.WindowPrint()
 }
+
+// WindowSetDebuggable sets whether the webview is debuggable.
+// On Windows this controls the --remote-debugging-port browser argument.
+func WindowSetDebuggable(ctx context.Context, debuggable bool) error {
+	appFrontend := getFrontend(ctx)
+	return appFrontend.SetDebuggable(debuggable)
+}

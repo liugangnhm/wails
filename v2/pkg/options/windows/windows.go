@@ -148,6 +148,10 @@ type Options struct {
 	// Set to 0 for default behavior, or combine multiple flags with bitwise OR
 	// Example: DLLSearchApplicationDir | DLLSearchSystem32
 	DLLSearchPaths uint32
+
+	// WebviewDebugPort specifies the remote debugging port for the webview.
+	// A value greater than 0 enables remote debugging by appending --remote-debugging-port={port} to the browser arguments.
+	WebviewDebugPort int
 }
 
 func DefaultMessages() *Messages {
