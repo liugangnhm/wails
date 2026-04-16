@@ -8,8 +8,8 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/liugangnhm/wails/v2/pkg/options"
-	"github.com/liugangnhm/wails/v2/pkg/options/assetserver"
+	"github.com/wailsapp/wails/v2/pkg/options"
+	"github.com/wailsapp/wails/v2/pkg/options/assetserver"
 	"golang.org/x/net/html"
 )
 

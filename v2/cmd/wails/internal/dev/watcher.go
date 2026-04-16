@@ -6,7 +6,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/liugangnhm/wails/v2/internal/fs"
+	"github.com/wailsapp/wails/v2/internal/fs"
 
 	"github.com/fsnotify/fsnotify"
 	gitignore "github.com/sabhiram/go-gitignore"

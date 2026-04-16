@@ -12,7 +12,7 @@ import (
 	"syscall"
 	"unsafe"
 
-	"github.com/liugangnhm/wails/v2/internal/frontend/desktop/windows/winc/w32"
+	"github.com/wailsapp/wails/v2/internal/frontend/desktop/windows/winc/w32"
 )
 
 // ListItem represents an item in a ListView widget.

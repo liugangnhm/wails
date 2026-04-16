@@ -6,7 +6,7 @@ package windows
 import (
 	"fmt"
 	"github.com/pkg/browser"
-	"github.com/liugangnhm/wails/v2/internal/frontend/utils"
+	"github.com/wailsapp/wails/v2/internal/frontend/utils"
 	"golang.org/x/sys/windows"
 )
 

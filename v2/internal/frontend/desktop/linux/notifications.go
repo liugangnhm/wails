@@ -12,7 +12,7 @@ import (
 	"sync"
 
 	"github.com/godbus/dbus/v5"
-	"github.com/liugangnhm/wails/v2/internal/frontend"
+	"github.com/wailsapp/wails/v2/internal/frontend"
 )
 
 var (

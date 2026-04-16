@@ -24,7 +24,7 @@ import (
 	"time"
 	"unsafe"
 
-	"github.com/liugangnhm/wails/v2/internal/frontend"
+	"github.com/wailsapp/wails/v2/internal/frontend"
 )
 
 // Package-scoped variable only accessible within this file

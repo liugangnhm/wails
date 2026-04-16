@@ -3,7 +3,7 @@ package runtime
 import (
 	"context"
 
-	"github.com/liugangnhm/wails/v2/internal/frontend"
+	"github.com/wailsapp/wails/v2/internal/frontend"
 )
 
 // NotificationOptions contains configuration for a notification.

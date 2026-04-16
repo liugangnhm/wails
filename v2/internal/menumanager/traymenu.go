@@ -10,7 +10,7 @@ import (
 	"github.com/leaanthony/go-ansi-parser"
 
 	"github.com/pkg/errors"
-	"github.com/liugangnhm/wails/v2/pkg/menu"
+	"github.com/wailsapp/wails/v2/pkg/menu"
 )
 
 var (
