@@ -12,15 +12,15 @@ import (
 	"github.com/pterm/pterm"
 	"github.com/samber/lo"
 
-	"github.com/wailsapp/wails/v2/internal/staticanalysis"
-	"github.com/wailsapp/wails/v2/pkg/commands/bindings"
+	"github.com/liugangnhm/wails/v2/internal/staticanalysis"
+	"github.com/liugangnhm/wails/v2/pkg/commands/bindings"
 
-	"github.com/wailsapp/wails/v2/internal/fs"
+	"github.com/liugangnhm/wails/v2/internal/fs"
 
-	"github.com/wailsapp/wails/v2/internal/shell"
+	"github.com/liugangnhm/wails/v2/internal/shell"
 
-	"github.com/wailsapp/wails/v2/internal/project"
-	"github.com/wailsapp/wails/v2/pkg/clilogger"
+	"github.com/liugangnhm/wails/v2/internal/project"
+	"github.com/liugangnhm/wails/v2/pkg/clilogger"
 )
 
 // Mode is the type used to indicate the build modes
@@ -363,7 +363,7 @@ func execBuildApplication(builder Builder, options *Options) (string, error) {
 		printBulletPoint("Self-signing application: ")
 		cmd := exec.Command("/usr/bin/codesign", "--force", "--deep", "--sign", "-", options.CompiledBinary)
 		if out, err := cmd.CombinedOutput(); err != nil {
-			return "", fmt.Errorf("codesign failed: %v â€“ %s", err, out)
+			return "", fmt.Errorf("codesign failed: %v â€?%s", err, out)
 		}
 		pterm.Println("Done.")
 	}

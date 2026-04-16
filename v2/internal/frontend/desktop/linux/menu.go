@@ -37,7 +37,7 @@ import "C"
 import (
 	"unsafe"
 
-	"github.com/wailsapp/wails/v2/pkg/menu"
+	"github.com/liugangnhm/wails/v2/pkg/menu"
 )
 
 var menuIdCounter int

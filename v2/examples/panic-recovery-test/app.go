@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/wailsapp/wails/v2/pkg/runtime"
+	"github.com/liugangnhm/wails/v2/pkg/runtime"
 )
 
 // App struct

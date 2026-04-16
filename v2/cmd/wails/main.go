@@ -6,9 +6,9 @@ import (
 	"strings"
 
 	"github.com/pterm/pterm"
-	"github.com/wailsapp/wails/v2/cmd/wails/internal"
+	"github.com/liugangnhm/wails/v2/cmd/wails/internal"
 
-	"github.com/wailsapp/wails/v2/internal/colour"
+	"github.com/liugangnhm/wails/v2/internal/colour"
 
 	"github.com/leaanthony/clir"
 )
@@ -49,7 +49,7 @@ func printFooter() {
 		MessageStyle: pterm.NewStyle(pterm.FgLightGreen),
 		Prefix: pterm.Prefix{
 			Style: pterm.NewStyle(pterm.FgRed, pterm.BgLightWhite),
-			Text:  "â™¥ ",
+			Text:  "â™?",
 		},
 	}
 	printer.Println("If Wails is useful to you or your company, please consider sponsoring the project:")

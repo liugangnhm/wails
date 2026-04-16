@@ -4,7 +4,7 @@
 package linux
 
 import (
-	"github.com/wailsapp/wails/v2/internal/frontend"
+	"github.com/liugangnhm/wails/v2/internal/frontend"
 	"unsafe"
 )
 

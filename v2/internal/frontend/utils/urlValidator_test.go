@@ -4,7 +4,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/wailsapp/wails/v2/internal/frontend/utils"
+	"github.com/liugangnhm/wails/v2/internal/frontend/utils"
 )
 
 // Test cases for ValidateAndOpenURL
@@ -171,7 +171,7 @@ func TestValidateURL(t *testing.T) {
 		// Edge cases
 		{
 			name:      "international domain",
-			url:       "https://例え.テスト/path",
+			url:       "https://例え.テス�?path",
 			shouldErr: false,
 			expected:  "https://%E4%BE%8B%E3%81%88.%E3%83%86%E3%82%B9%E3%83%88/path",
 		},

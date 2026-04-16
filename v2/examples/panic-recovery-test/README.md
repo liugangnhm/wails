@@ -16,7 +16,7 @@ fatal error: non-Go code set up signal handler without SA_ONSTACK flag
 Call `runtime.ResetSignalHandlers()` immediately before code that might panic:
 
 ```go
-import "github.com/wailsapp/wails/v2/pkg/runtime"
+import "github.com/liugangnhm/wails/v2/pkg/runtime"
 
 go func() {
     defer func() {

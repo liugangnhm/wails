@@ -19,14 +19,14 @@ import (
 	"syscall"
 	"unsafe"
 
-	"github.com/wailsapp/wails/v2/pkg/options"
+	"github.com/liugangnhm/wails/v2/pkg/options"
 )
 
 func SetupSingleInstance(uniqueID string) *os.File {
 	lockFilePath := getTempDir()
 	lockFileName := uniqueID + ".lock"
 	file, err := createLockFile(lockFilePath + "/" + lockFileName)
-	// if lockFile exist â€“ send notification to second instance
+	// if lockFile exist â€?send notification to second instance
 	if err != nil {
 		c := NewCalloc()
 		defer c.Free()
